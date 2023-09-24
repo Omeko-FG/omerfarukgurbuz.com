@@ -1,3 +1,111 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+body {
+    background: linear-gradient(194deg, #cad58d, #e8c9c9, #c0d5db, #dabfe1, #9ee3ac);
+    background-size: 1000% 1000%;
+
+    -webkit-animation: AnimationName 30s ease infinite;
+    -moz-animation: AnimationName 30s ease infinite;
+    animation: AnimationName 30s ease infinite;
+
+    text-align: center;
+    width: 100vw;
+    height: 100vh;
+  
+    overflow: hidden;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@-webkit-keyframes AnimationName {
+    0%{background-position:92% 0%}
+    50%{background-position:9% 100%}
+    100%{background-position:92% 0%}
+}
+@-moz-keyframes AnimationName {
+    0%{background-position:92% 0%}
+    50%{background-position:9% 100%}
+    100%{background-position:92% 0%}
+}
+@keyframes AnimationName {
+    0%{background-position:92% 0%}
+    50%{background-position:9% 100%}
+    100%{background-position:92% 0%}
+}
+  
+  nav {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    width: 300px;
+
+  }
+  
+  .navbar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 300px;
+    background-color: blueviolet;
+
+  } 
+  
+  button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    position: absolute;
+    top: 18px;
+    right: 15px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: transparent;
+  }
+  
+  ul,
+  li {
+    margin: 0;
+    padding: 0;
+  }
+  
+  ul {
+    padding: 25px;
+    position: absolute;
+    top: 100px;
+    width: 230px;
+  }
+  
+  li {
+    list-style: none;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+  }
+
+  
+  .text-placeholder {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    padding: 10px;
+    width: 200px;
+    height: 20px;
+    flex: 1;
+  }
+
+  .text{
+    
+  }
+  

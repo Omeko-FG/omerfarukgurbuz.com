@@ -1,3 +1,9 @@
+import Navbar from "@/components/Navbar/Navbar";
+
 export default function Home() {
-  return <div className="dark:text-red-900">Hello world!</div>;
+  return(
+    <div>
+      <Navbar/>
+    </div>
+  )
 }

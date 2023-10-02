@@ -23,11 +23,12 @@ const App = () => {
           </div>
           <div className=' flex-col justify-start'>
             <div className=' p-10 flex text-start text-3xl md:text-5xl font-semibold '>
-            I'm a Full Stack Developer based on Next.js and Django.
+            I'm a Full Stack Developer based on React.js and Django.
             </div>
             <div className='p-10 flex text-left justify-center mb-12 text-xl sm:text-2xl text-gray-600'>
-            Since beginning my journey, I've worked in software development, including web development, mobil development, full-stack development, app UI/UX, SDLC. And ı'm happy with this.
+              Since beginning my journey, I've worked in software development, including web development, mobil development, full-stack development, app UI/UX, SDLC. And I'm happy with this.
             </div>
+
           </div>
         </div>
        </div>

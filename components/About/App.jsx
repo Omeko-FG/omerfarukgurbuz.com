@@ -6,7 +6,7 @@ import { MdEmail } from 'react-icons/md'
 
 const App = () => {
   return (  
-    <div className='grid p-4 sm:p-10 mt-32 gap-5 '>
+    <div className='grid p-10 mt-8 sm:mt-32 gap-5 '>
         <h1 className=' font-sans grid justify-center items-center text-5xl sm:text-6xl md:text-7xl lg:text-9xl h-full'>
           <span className='block heading-line heading-line-first'> Hi, I'm Omer.</span> 
           <span className='block heading-line heading-line-second'>A Developer</span>

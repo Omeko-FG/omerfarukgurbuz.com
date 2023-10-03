@@ -4,9 +4,37 @@ import {BsGithub} from 'react-icons/bs'
 import {FiExternalLink} from 'react-icons/fi'
 import { useEffect, useState } from 'react';
 import projectsData from "@/public/data/Projects"
+import {motion } from "framer-motion"
 
   
   const Projects = () => {
+    const cardItemVariants = {
+      hidden: { opacity: 0, scale:0.85, y:50 },
+      show: {
+        opacity: 1,
+        scale: 1,
+        y:0,
+        transition: {
+          duration: 1.4,
+          type: "spring",
+          // damping: 3,
+          // stiffness: 25,
+        }
+      }
+    };
+
+    const cardsContainerVariants = {
+      hidden: { opacity: 0},
+      show: {
+        opacity: 1,
+        transition: {
+          duration:1.5,
+          delayChildren: 0.7,
+          staggerChildren: 0.5
+        }
+      }
+    };
+
       const [isLgScreen, setIsLgScreen] = useState(false);
       useEffect(() => {
         const checkScreenSize = () => {
@@ -19,12 +47,19 @@ import projectsData from "@/public/data/Projects"
         };
       }, []);
     return (
-      <div className='p-5 sm:p-10 md:p-16 mt-24 sm:mt-40'>
+      <motion.div className='p-5 sm:p-10 md:p-16 mt-24 sm:mt-40'
+     
+      >
         <div className='p-10 flex justify-center text-3xl md:text-5xl font-semibold'>
           Some Of My Projects
         </div>
         {projectsData.map((project, index) => (
-          <div key={index} className={`grid grid-cols-1 lg:grid-cols-2  lg:bg-inherit gap-5 bg-teal-200 bg-opacity-40 rounded-3xl sm:p-10 mt-20`}>
+          <motion.div key={index} className={`grid grid-cols-1 lg:grid-cols-2  lg:bg-inherit gap-5 bg-teal-200 bg-opacity-40 rounded-3xl sm:p-10 mt-20`}
+          variants={cardItemVariants}
+          initial="hidden"
+          whileInView="show"
+          item
+          container>
             {index % 2 === 0 || isLgScreen===false ? (
               <>
                 <div className=' my-auto'>
@@ -84,10 +119,10 @@ import projectsData from "@/public/data/Projects"
                 </div>
               </>
             )}
-          </div>
+          </motion.div>
         ))}
         <div className='hidden sm:flex justify-center text-center my-12 text-sm sm:text-2xl text-gray-600 font-medium '>Heyy, just check my <BsGithub className='w-5 sm:w-8 h-5 sm:h-8 text-black hover:text-gray-500 hover:scale-105 mx-2' /> profile for more projects 🙃.</div>
-      </div>
+      </motion.div>
     );
   };
   

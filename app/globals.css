@@ -59,7 +59,7 @@ button {
 
 body {
     background: #EDE7DE;
-    background-size: 1000% 1000%;
+    /* background-size: 0% 0%; */
     /* ! buarda backrounda animasyon yada daha güzel şeyler eklenebilir */
     text-align: center;
     overflow: auto;
@@ -72,7 +72,6 @@ body {
   margin: 0;
   padding: 0;
   color: rgb(209, 62, 86);
-  padding-bottom: 100px;
   min-height: 100vh;
 }
 
@@ -132,6 +131,7 @@ h1 {
   height: 10px;
   background: linear-gradient(-45deg, #978ad1, #6355a4, #c9468a, #e89a3e);
   transform-origin: 0%;
+  z-index: 500;
 }
 
 ::selection{

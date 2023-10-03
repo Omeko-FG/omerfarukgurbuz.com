@@ -19,8 +19,8 @@ import projectsData from "@/public/data/Projects"
         };
       }, []);
     return (
-      <div className='p-10 mt-24 sm:mt-40'>
-        <div className='p-10 flex justify-center text-3xl md:text-5xl font-semibold mb-16'>
+      <div className='p-5 sm:p-10 md:p-16 mt-24 sm:mt-40'>
+        <div className='p-10 flex justify-center text-3xl md:text-5xl font-semibold'>
           Some Of My Projects
         </div>
         {projectsData.map((project, index) => (
@@ -45,11 +45,11 @@ import projectsData from "@/public/data/Projects"
                     <code>{project.technologies}</code>
                   </div>
                   <div className='flex justify-end gap-3 mt-8'>
-                    <Link href={project.githubLink}>
-                      <BsGithub target="_blank" className='w-10 h-10 text-black hover:text-gray-500 hover:scale-105' />
+                    <Link href={project.githubLink} target="_blank" >
+                      <BsGithub className='w-10 h-10 text-black hover:text-gray-500 hover:scale-105' />
                     </Link>
-                    <Link href={project.externalLink}>
-                      <FiExternalLink  target="_blank" className='w-10 h-10 text-blue-500 hover:text-blue-800 hover:scale-105' />
+                    <Link href={project.externalLink} target="_blank">
+                      <FiExternalLink className='w-10 h-10 text-blue-500 hover:text-blue-800 hover:scale-105' />
                     </Link>
                   </div>
                 </div>

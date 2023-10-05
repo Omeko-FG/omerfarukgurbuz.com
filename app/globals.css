@@ -56,7 +56,7 @@ button {
 } */
 
 body {
-  background: #fff;
+  background: #ede7de;
   /* background-size: 0% 0%; */
   /* ! buarda backrounda animasyon yada daha güzel şeyler eklenebilir */
   text-align: center;
@@ -71,7 +71,10 @@ body {
   padding: 0;
   color: rgb(209, 62, 86);
   min-height: 100vh;
-  /* max-width: ; */
+}
+
+.navlink:focus {
+  background: #928b8b;
 }
 
 #root {

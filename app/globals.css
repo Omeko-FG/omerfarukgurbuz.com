@@ -2,7 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-
 /* ! BU KISIM HAMBURGER İCON İÇİN YAPILDI
 .menu {
   z-index: 1000;
@@ -56,23 +55,23 @@ button {
   background-color: #00000043;
 } */
 
-
 body {
-    background: #EDE7DE;
-    /* background-size: 0% 0%; */
-    /* ! buarda backrounda animasyon yada daha güzel şeyler eklenebilir */
-    text-align: center;
-    overflow: auto;
-    display: flex;
-    justify-content: center;
-    backdrop-filter: 20px;
+  background: #ede7de;
+  /* background-size: 0% 0%; */
+  /* ! buarda backrounda animasyon yada daha güzel şeyler eklenebilir */
+  text-align: center;
+  overflow: auto;
+  display: flex;
+  justify-content: center;
+  backdrop-filter: 20px;
 }
-  
+
 body {
   margin: 0;
   padding: 0;
   color: rgb(209, 62, 86);
   min-height: 100vh;
+  /* max-width: ; */
 }
 
 #root {
@@ -93,33 +92,37 @@ body {
   -webkit-font-smoothing: antialiased;
 }
 
-
-
 h1 {
-	background: linear-gradient(-45deg, #978ad1, #6355a4, #c9468a, #e89a3e);
-	background-size: 300%;
-	font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-	font-weight: 1000;
-	font-size: 10vw;
-	letter-spacing: -5px;
-	/* text-transform: uppercase; */
-	-webkit-background-clip: text;
-	-webkit-text-fill-color: transparent;
-	animation: animated_text 10s ease-in-out infinite;
-	-moz-animation: animated_text 10s ease-in-out infinite;
-	-webkit-animation: animated_text 10s ease-in-out infinite;
+  background: linear-gradient(-45deg, #978ad1, #6355a4, #c9468a, #e89a3e);
+  background-size: 300%;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: 1000;
+  font-size: 10vw;
+  letter-spacing: -5px;
+  /* text-transform: uppercase; */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: animated_text 10s ease-in-out infinite;
+  -moz-animation: animated_text 10s ease-in-out infinite;
+  -webkit-animation: animated_text 10s ease-in-out infinite;
 }
 
 @keyframes animated_text {
-	0% { background-position: 0px 50%; }
-	50% { background-position: 100% 50%; }
-	100% { background-position: 0px 50%; }
+  0% {
+    background-position: 0px 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0px 50%;
+  }
 }
 
 /* !USE SCROLL EKLENDİ */
 
 ::-webkit-scrollbar {
-  width: 0px; 
+  width: 0px;
 }
 
 .progress-bar {
@@ -134,7 +137,10 @@ h1 {
   z-index: 500;
 }
 
-::selection{
+::selection {
   color: white;
-  background-color: #D13E56;
+  background-color: #d13e56;
+}
+.parallax {
+  overflow: hidden;
 }

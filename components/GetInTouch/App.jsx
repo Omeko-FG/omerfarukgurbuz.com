@@ -6,6 +6,7 @@ import { BsInstagram } from "react-icons/bs";
 import { FiFacebook } from "react-icons/fi";
 import { BiLogoUpwork } from "react-icons/bi";
 import { BsWhatsapp } from "react-icons/bs";
+import { MdCopyright } from "react-icons/md";
 import Link from "next/link";
 
 const GetInTouch = () => {
@@ -80,8 +81,8 @@ const GetInTouch = () => {
             <BsInstagram className="w-5 h-5 sm:w-10 sm:h-10 text-gray-500 hover:text-red-500 hover:scale-105 hover:cursor-pointer" />
           </Link>
         </div>
-        <div className="text-black text-base font-medium p-5">
-          Handcrafted by me ©️omerfarukgurbuz
+        <div className="flex justify-center items-center text-black text-base font-medium p-5">
+          Handcrafted by me <MdCopyright className="ml-1"/> <b>omerfarukgurbuz</b> 
         </div>
       </div>
     </div>

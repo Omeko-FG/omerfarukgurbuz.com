@@ -85,8 +85,8 @@ export default function App() {
           }`}
         >
           {list.map((item) => (
-            <Link
-              href={`/${item.section}`}
+            <a
+              href={`#${item.section}`}
               className={`${
                 !navState
                   ? "flex navlink justify-center items-center p-2  rounded-full hover:cursor-pointer hover:shadow-2xl text-sm sm:text-xl font-semibold transition-all duration-500 focus:bg-gray-400"
@@ -94,7 +94,7 @@ export default function App() {
               }`}
             >
               {item.name}
-            </Link>
+            </a>
           ))}
         </div>
       </div>

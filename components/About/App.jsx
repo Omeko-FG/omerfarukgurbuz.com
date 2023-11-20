@@ -50,7 +50,7 @@ const App = () => {
     },
   };
 
-  return (
+  return (          
     <div className="grid p-2 sm:p-10 md:p-16 mt-8 sm:mt-32 gap-5 ">
       <motion.h1
         className=" font-sans grid justify-center items-center text-5xl sm:text-6xl md:text-7xl lg:text-9xl h-full"

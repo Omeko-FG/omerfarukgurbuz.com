@@ -6,14 +6,17 @@ import { BsInstagram } from "react-icons/bs";
 import { FiFacebook } from "react-icons/fi";
 import { BiLogoUpwork } from "react-icons/bi";
 import { BsWhatsapp } from "react-icons/bs";
-import { MdCopyright } from "react-icons/md";
 import Link from "next/link";
+import { MdCopyright } from "react-icons/md";
+import Lottie from "lottie-react";
+import AnimationPeople from "@/public/images/AnimationPeople.json";
+import Animationhand from "@/public/images/Animationhand.json";
 
 const GetInTouch = () => {
   return (
     <div>
-      <div className="bg-[#ecdbc1]">
-        <div className="grid grid-cols-1 md:grid-cols-2 ">
+      <div className="bg-[#ecdbc1] mt-12">
+        <div className="grid grid-cols-1 md:grid-cols-2">
           <div className="grid p-24 gap-5">
             <div className="text-center text-xl sm:text-2xl">What’s Next?</div>
             <div className="text-center text-2xl sm:text-3xl">Get In Touch</div>
@@ -28,19 +31,22 @@ const GetInTouch = () => {
               <Link href="mailto:gurbuzzomer@gmail.com">
                 <button className="flex items-center p-2 bg-red-400 rounded-3xl text-white">
                   Say Hello
-                  <iframe
-                    className="w-10 h-10"
-                    src="https://lottie.host/?file=7879de2c-897c-4dad-8f7b-32ac3bd4213e/LfdLnTffOg.json"
-                  ></iframe>
+                  <Lottie
+                    animationData={Animationhand}
+                    className="flex justify-center items-center w-14"
+                    loop={true}
+                  />
                 </button>
               </Link>
             </div>
           </div>
           <div className="flex justify-center">
-            <iframe
-              className="w-full h-full"
-              src="https://lottie.host/?file=6fb1edb4-b2d3-4cf9-bd5d-4ee88748d2ca/3xBWkxMlWo.json"
-            ></iframe>
+            <Lottie
+              animationData={AnimationPeople}
+              className="flex justify-center items-center"
+              loop={true}
+            />
+            {/* <LottiePlayer animationURL={animationURL} autoplay loop speed={1} /> */}
           </div>
         </div>
         <div className="flex justify-center items-center gap-5 p-10 mt-8">
@@ -82,7 +88,8 @@ const GetInTouch = () => {
           </Link>
         </div>
         <div className="flex justify-center items-center text-black text-base font-medium p-5">
-          Handcrafted by me <MdCopyright className="ml-1"/> <b>omerfarukgurbuz</b> 
+          Handcrafted by me <MdCopyright className="ml-1" />{" "}
+          <b>omerfarukgurbuz</b>
         </div>
       </div>
     </div>

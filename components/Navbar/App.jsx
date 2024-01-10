@@ -81,12 +81,12 @@ export default function App() {
           className={`${
             !navState
               ? "flex sm:gap-12 justify-center  p-10  bg-opacity-50 fixed z-50 top-0  w-full backdrop-blur-xl transition-all duration-1000 "
-              : "flex sm:gap-12  justify-center p-5 bg-slate-300 bg-opacity-50 fixed z-50 w-full lg:w-8/12 xl:w-1/2 rounded-none lg:rounded-full top-0 lg:top-3 backdrop-blur-3xl transition-all duration-700 "
+              : "flex sm:gap-12  justify-center p-5 bg-slate-300 bg-opacity-50 fixed z-50 w-full lg:w-2/3 xl:w-6/12 lg:max-w-[700px] rounded-none lg:rounded-full top-0 lg:top-3 backdrop-blur-3xl transition-all duration-700 "
           }`}
         >
           {list.map((item) => (
             <a
-              href={`#${item.section}`}
+              href={`/${item.section}`}
               className={`${
                 !navState
                   ? "flex navlink justify-center items-center p-2 rounded-full hover:cursor-pointer hover:shadow-2xl text-sm sm:text-xl font-semibold transition-all duration-500 focus:bg-gray-400"

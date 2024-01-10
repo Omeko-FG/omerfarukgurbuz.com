@@ -5,7 +5,7 @@ import { BsGithub } from "react-icons/bs";
 
 const OtherProjects = () => {
   return (
-    <main className="w-full flex flex-col justify-center items-center mt-24 ">
+    <main className="w-full flex flex-col justify-center items-center mt-24 px-3 sm:px-10">
       <div className="p-10 flex justify-center text-3xl md:text-5xl font-semibold mb-12">
         Some Of My Projects
       </div>
